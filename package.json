@@ -1,0 +1,29 @@
+{
+  "name": "react-routing",
+  "version": "1.0.0",
+  "description": "basics of tooling React using Babel, NPM and Webpack. ",
+  "main": "index.html",
+  "author": "vikas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "react-router-dom": "^4.0.0",
+    "serve": "^5.1.1",
+    "webpack": "^2.3.2"
+  },
+  "scripts": {
+    "watch": "webpack -d --watch",
+    "build": "webpack",
+    "serve": "serve ./src/client/public"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0",
+    "react-router-redux": "^5.0.0-alpha.4"
+  }
+}
