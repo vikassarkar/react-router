@@ -11,7 +11,9 @@ class AppHeader extends Component {
         console.log(x)
         console.log(y)
         console.log(e.target)
-        document.querySelector('.sideBar').classList.remove('hide');
+        document.querySelector('.sideBar-overlay').classList.remove('hide');
+    	document.querySelector('.sideBarMenu').classList.remove('slideOut');
+    	document.querySelector('.sideBarMenu').classList.add('slideIn');
     } 
     render(){
         return (

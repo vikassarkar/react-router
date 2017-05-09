@@ -14,13 +14,15 @@ class SideBarMenu extends Component {
     	console.log(x)
     	console.log(y)
     	console.log(e.target)
-    	document.querySelector('.sideBar').classList.add('hide');
+    	document.querySelector('.sideBar-overlay').classList.add('hide');		
+    	document.querySelector('.sideBarMenu').classList.remove('slideIn');
+    	document.querySelector('.sideBarMenu').classList.add('slideOut');
     }    
 
     render(){
         return (
-        	<div className="sideBar hide">
-				<div className= "sideBar-overlay" onClick={(e) => this.hideSidebar(e, 'home', 'xyz')}></div>
+        	<div className="sideBar">
+				<div className= "sideBar-overlay hide" onClick={(e) => this.hideSidebar(e, 'home', 'xyz')}></div>
 				<div className= "sideBarMenu" onClick={(e) => this.hideSidebar(e, 'home', 'xyz')}>
 			        <nav className="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 			         	<div className="navbar-ico">
